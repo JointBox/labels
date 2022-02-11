@@ -1,0 +1,16 @@
+template:
+  name: Serial Number
+  description: Serial number
+  author: jointbox<support@jointbox.io>
+  license: proprietary
+
+params:
+  default:
+    required: false
+    validator: string
+
+layout:
+  template: |
+    {{"QC" | default:param.default}}
+  css: |
+    .label {font-size: 1em;}
