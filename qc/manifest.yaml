@@ -11,6 +11,6 @@ params:
 
 layout:
   template: |
-    {{"QC" | default:param.default}}
+    {{"QC" | default(param.default) }}
   css: |
     .label {font-size: 1em;}
